@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+    <script defer src="./task5.js"></script>
+  </head>
+  <body>
+    <form class="form">
+      <input
+        class="inputfirst"
+        type="text"
+        placeholder="Введите номер страницы"
+      />
+      <input class="inputsecond" type="text" placeholder="Введите лимит" />
+      <button class="btn">Запрос</button>
+    </form>
+    <div class="result"></div>
+    <p class="error"></p>
+  </body>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30vh;
+    }
+    .form {
+      margin-bottom: 25px;
+    }
+    .result {
+      display: grid;
+      width: 100%;
+      max-width: 1250px;
+      grid-template-columns: repeat(auto-fit, 300px);
+      gap: 15px;
+      justify-content: center;
+    }
+    .error {
+      margin: 0;
+    }
+  </style>
+</html>
