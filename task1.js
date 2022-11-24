@@ -27,8 +27,6 @@ const xmlList = `
 const xmlDom = parserXml.parseFromString(xmlList, 'text/xml');
 const studentNodes = xmlDom.querySelectorAll('student');
 
-// Задание 1
-
 let result = {
   list: [],
 };
